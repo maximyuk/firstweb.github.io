@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 @import url('https://fonts.cdnfonts.com/css/bowler');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto+Condensed:ital@1&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto+Condensed:ital@1&display=swap');
-
 
 body {
   overflow-x: hidden;
+  position: relative;
   background: #FFD54F;
 }
 
@@ -18,128 +14,118 @@ body {
   z-index: 4;
   position: relative;
   display: flex;
-  font: 14px Montserrat;
+  font: 1.5vw Montserrat;
   font-family: 'Montserrat', sans-serif;
-  padding: 12px 16px;
+  padding: 1vh 2vw;
   border: none;
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
-  left: 120px;
-  top: -20px;
-
+  
+  left: 10vw;
+  top: -2vh;
 }
 
+/* Додано відносні одиниці вимірювання до інших стилів */
 
-.plat { 
-  color: black; 
-}
-
-.price {
- color: black; 
-}
-
-.sale {
- color: black; 
-}
-
-.support { 
-  color: black; 
-}
-
-.portfolio {
-  color: black; 
-}
-
-
-
-.text{
+.text {
   position: relative;
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  font: bold 40px Montserrat;
+  font: bold 2vw Montserrat;
   text-transform: uppercase;
   text-decoration: none;
-  left: 60px;
-  top: 120px;
-
-
+  left: 25vw;
+  top: 12vh;
 }
 
-.text2{
+.text2 {
   position: relative;
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  font: 8px Montserrat;
+  font: 1vw Montserrat;
   text-transform: uppercase;
   text-decoration: none;
-  left: 60px;
-  top: 70px;
+  left: 27vw;
+  top: 7vh;
 }
-
-
 
 .create {
   width: max-content;
   display: flex;
-  padding: 15px 15px;
+  padding: 1.5vh 2vw;
   border: none;
   border-radius: 7px;
-  font: 12px Montserrat;
+  font: 1.5vw Montserrat;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   background: black;
   cursor: pointer;
-  margin-top: 100px;
-  margin-left: 60px;
-
+  margin-top: 15vh;
+  margin-left: 35vw;
 }
 
-
-
-
-.logo{
+.logo {
   z-index: 5;
-  width: 120px;
-  height: 25px;
+  width: 10vw;
+  height: 2vh;
   display: flex;
   position: relative;
   text-decoration: none;
   cursor: pointer;
   color: black;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px ;
-  top: 20px;
-  left: 25px;
+  font-size: 2vw;
+  top: 2vh;
+  left: 1.5vw;
 }
 
-.img{
+.img {
   position: relative;
-
-  width: 500px;
-  height: 500px;
-  left: 700px;
-  top: -460px;
+  width: 33vw;
+  height: 33vw;
+  left: 60vw;
+  top: -25vw;
 }
 
-
-
-
-.images{
+.images {
   position: relative;
-  width: 190vh;
-  right: 10px;
-  top: -60vh;
+  width: 100vw;
+  right: 1vw;
+  top: 35vh;
 }
 
-.images2{
+.images2 {
   position: relative;
-  width: 190vh;
-  right: 10px;
-  top: 15vh;
+  width: 100vw;
+  right: 1vw;
+  top: 45vh;
 }
 
 
 
+.dev{
+  position: relative;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font: bold 2vw Montserrat;
+  text-transform: uppercase;
+  text-decoration: none;
+  left: 33vw;
+  top: 40vh; 
 
+}
+
+/* Додано медіа-запити для адаптації на конкретних точках зміни приблизності */
+
+@media screen and (max-width: 768px) {
+  /* Ваші стилі для екранів з шириною менше 768px */
+  .button {
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    left: 10vw;
+  }
+  
+  /* Додаткові стилі за необхідності */
+}
